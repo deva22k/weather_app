@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    font-family: sans-serif;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    width: 80%;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.search button {
+   margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 25px;
+}
+
+.suggestions {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 80%;
+
+    background: white;
+    color: #222;
+
+    border-radius: 10px;
+
+    text-align: left;
+
+    overflow: hidden;
+
+    z-index: 10;
+}
+
+.suggestions div {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.suggestions div:hover {
+    background: #eee;
+}
+
+.weather {
+    margin-top: 30px;
+}
+
+.weather-icon {
+    width: 140px;
+}
+
+.temp {
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+.city {
+    font-size: 35px;
+    margin-top: 5px;
+}
+
+.condition {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.details div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.details img {
+    width: 40px;
+}
+
+.details p {
+    font-size: 16px;
+}
+
+.humidity,
+.wind {
+    font-weight: bold;
+}
